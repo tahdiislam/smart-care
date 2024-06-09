@@ -114,7 +114,7 @@ nav {
 .review_title {
   color: hwb(180 5% 60%);
 }
-.review_card{
+.review_card {
   width: 25rem;
   height: auto;
   padding: 2rem;
@@ -126,13 +126,32 @@ nav {
   text-align: center;
 }
 
-.review_card h3{
+.review_card h3 {
   color: hwb(180 5% 60%);
 }
 
-.review_card img{
+.review_card img {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   object-fit: cover;
+}
+
+footer {
+  background: linear-gradient(
+    45deg,
+    rgb(32, 195, 232) 0%,
+    rgb(15, 168, 185) 0%,
+    rgb(5, 142, 157) 0%
+  );
+  padding: 5rem;
+  align-items: center;
+  list-style: none;
+  color: #d2d2d2;
+}
+
+.details img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
 }

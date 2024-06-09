@@ -99,7 +99,7 @@ const loadDoctors = (search) => {
                         <p class="card-text">${doctor.designation}</p>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, exercitationem reiciendis accusamus</p>
                             <p ><small class="text-muted">${doctor.specialization}</small></p>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        <a href="docDetails.html?docId=${doctor.id}" class="btn btn-primary">View Details</a>
                     </div>
                 </div>
                 `;
