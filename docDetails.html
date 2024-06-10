@@ -14,29 +14,64 @@
 
 <body>
     <nav>
-        <div class='logo_container'>
+        <a href="index.html" class='logo_container'>
             <img src="./Images/stethoscope 1.png" alt="logo">
             <h1>
                 SmartCare
             </h1>
-        </div>
+        </a>
         <ul class='nav_items'>
-            <li>Homem</li>
             <li>Service</li>
             <li>Contact Us</li>
-            <li>Sign Up</li>
-            <li>Login</li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Registration</a></li>
         </ul>
     </nav>
-    <section id="docDetails" class="container">
+    <section id="docDetails" class="container pt-2 pb-4">
     </section>
     <div
+    id="doctor-reviews-container"
         class="container swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-last-visible">
         <ul id='doctor-reviews' class="slider-container py-4">
         </ul>
 
         <button type="button" class="slider-nav" aria-label="Go left"></button>
         <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fill the Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div>
+                        <label class="radio">
+                            <input class="form-check-input" name="status" type="radio" value="Offline" checked />
+                            <span>Offline</span>
+                        </label>
+                        <label class="radio">
+                            <input class="form-check-input" name="status" type="radio" value="Online" />
+                            <span>Online</span>
+                        </label>
+                    </div>
+                    <br>
+                    <input class="form-control" id="symptom" type="text" placeholder="type your symptom">
+                    </br>
+                    <select class="form-select" id="time" name="time">
+                        <option value="none" selected>Select Time</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="submitForm()" type="button" class="btn btn-primary">Take Appointment</button>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="row w-100">
         <div class="col-md-6">

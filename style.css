@@ -12,6 +12,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #000;
+  text-decoration: none;
 }
 
 .nav_items {
@@ -150,8 +152,22 @@ footer {
   color: #d2d2d2;
 }
 
-.details img{
+.details img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
+}
+
+.doctor_name {
+  color: hwb(180 5% 60%);
+}
+
+.login_img {
+  width: 45rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.login_heading{
+  color: hwb(180 5% 60%);
 }
