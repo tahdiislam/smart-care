@@ -92,7 +92,7 @@ const loadDoctors = (search) => {
           const div = document.createElement("div");
           div.classList.add("col-4");
           div.innerHTML = `
-                <div class="card w-100">
+                <div class="card w-100 ">
                     <img src="${doctor.image}" class="doc_card_img rounded-circle m-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">${doctor.full_name}</h5>
@@ -142,4 +142,4 @@ loadServices();
 loadDesignation();
 loadSpecialization();
 loadDoctors();
-loadReviews()
+loadReviews();

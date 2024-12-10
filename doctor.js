@@ -5,7 +5,7 @@ const param = new URLSearchParams(window.location.search).get("docId");
 const docDetails = document.getElementById("docDetails");
 const reviews = document.getElementById("doctor-reviews");
 const times = document.getElementById("time");
-const reviewContainer = document.getElementById('doctor-reviews-container')
+const reviewContainer = document.getElementById("doctor-reviews-container");
 
 const getParams = () => {
   fetch(`https://test-thto.onrender.com/doctor/list/${param}`)
@@ -44,8 +44,8 @@ const displayDetails = (data) => {
 };
 
 const displayReviews = (data) => {
-  if(data.length === 0){
-    reviewContainer.style.display = 'none'
+  if (data.length === 0) {
+    reviewContainer.style.display = "none";
   }
   data?.map((review) => {
     const li = document.createElement("li");
